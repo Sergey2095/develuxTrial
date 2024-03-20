@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {memo, useMemo} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import {useStyle} from '~src/hooks/useStyle';
@@ -57,7 +57,9 @@ const StockItem = ({stock}: StockItemProps) => {
   );
 };
 
-export default StockItem;
+export default memo(StockItem, (prevProps, nextProps) => {
+  return prevProps.stock.id === nextProps.stock.id;
+});
 
 const styles = StyleSheet.create({
   wrapper: {
