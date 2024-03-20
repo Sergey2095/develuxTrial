@@ -99,7 +99,7 @@ const List = <TItem,>({
       ListFooterComponent={_renderFooter}
       refreshControl={
         <RefreshControl
-          tintColor="#555"
+          tintColor={COLORS.blue}
           onRefresh={_onRefresh}
           refreshing={refreshing}
         />

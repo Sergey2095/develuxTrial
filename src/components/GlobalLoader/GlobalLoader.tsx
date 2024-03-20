@@ -19,7 +19,7 @@ interface IGlobalLoader {
 export const GlobalLoader = ({
   size = 'large',
   style = {},
-  color = COLORS.white,
+  color = COLORS.blue,
   ...props
 }: IGlobalLoader & ViewProps): JSX.Element => {
   const wrapperStyle = useStyle(() => [styles.container, style], [style]);
