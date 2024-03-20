@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/SF-Pro-Display.ttf",
+      "sha1": "af0e4a4d7f6b6cad021daf4c78cc664512cd0d50"
+    },
+    {
+      "path": "src/assets/icons/icomoon.ttf",
+      "sha1": "71f63fd0d583315c98b9d4406e4d084f658b5d32"
+    },
+    {
+      "path": "src/assets/icons/icons.json",
+      "sha1": "7365971ca01e1aa4f4cc89d8abf3bc69c29a3018"
+    },
+    {
+      "path": "src/assets/icons/selection.json",
+      "sha1": "ac02cc48cbd921c6b34e87cfdce6aee687fc2225"
+    }
+  ]
+}

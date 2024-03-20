@@ -14,6 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-develuxTrial-develuxTrialTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-develuxTrial-develuxTrialTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		93A03F6A47F14D74B087AA26 /* SF-Pro-Display.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AF82B7BFC7E4E8E9E9AED46 /* SF-Pro-Display.ttf */; };
+		A9D793D0C95B4A6F8AB24B3F /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C038F1E2D47949B2B911EFF4 /* icomoon.ttf */; };
+		B3239B9A9D724DA98208806C /* icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A465E058B53495BA9B2CD4E /* icons.json */; };
+		EEC58C4A4E89425C84BA9C2E /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CF80A8974254011B57CF2B9 /* selection.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +41,16 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = develuxTrial/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = develuxTrial/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-develuxTrial-develuxTrialTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-develuxTrial-develuxTrialTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF82B7BFC7E4E8E9E9AED46 /* SF-Pro-Display.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display.ttf"; path = "../src/assets/fonts/SF-Pro-Display.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-develuxTrial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-develuxTrial.debug.xcconfig"; path = "Target Support Files/Pods-develuxTrial/Pods-develuxTrial.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-develuxTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-develuxTrial.release.xcconfig"; path = "Target Support Files/Pods-develuxTrial/Pods-develuxTrial.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-develuxTrial-develuxTrialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-develuxTrial-develuxTrialTests.debug.xcconfig"; path = "Target Support Files/Pods-develuxTrial-develuxTrialTests/Pods-develuxTrial-develuxTrialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-develuxTrial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-develuxTrial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A465E058B53495BA9B2CD4E /* icons.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = icons.json; path = ../src/assets/icons/icons.json; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = develuxTrial/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-develuxTrial-develuxTrialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-develuxTrial-develuxTrialTests.release.xcconfig"; path = "Target Support Files/Pods-develuxTrial-develuxTrialTests/Pods-develuxTrial-develuxTrialTests.release.xcconfig"; sourceTree = "<group>"; };
+		8CF80A8974254011B57CF2B9 /* selection.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = selection.json; path = ../src/assets/icons/selection.json; sourceTree = "<group>"; };
+		C038F1E2D47949B2B911EFF4 /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../src/assets/icons/icomoon.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -96,6 +104,18 @@
 			name = develuxTrial;
 			sourceTree = "<group>";
 		};
+		28EC1F52F60742138F540E06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AF82B7BFC7E4E8E9E9AED46 /* SF-Pro-Display.ttf */,
+				C038F1E2D47949B2B911EFF4 /* icomoon.ttf */,
+				6A465E058B53495BA9B2CD4E /* icons.json */,
+				8CF80A8974254011B57CF2B9 /* selection.json */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				28EC1F52F60742138F540E06 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -243,6 +264,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				93A03F6A47F14D74B087AA26 /* SF-Pro-Display.ttf in Resources */,
+				A9D793D0C95B4A6F8AB24B3F /* icomoon.ttf in Resources */,
+				B3239B9A9D724DA98208806C /* icons.json in Resources */,
+				EEC58C4A4E89425C84BA9C2E /* selection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
