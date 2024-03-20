@@ -1,9 +1,9 @@
 import React from 'react';
 import {Text, StyleSheet} from 'react-native';
-import {FONTS, COLORS} from '~src/theme';
 
-import {useStyle} from '~src/hooks/useStyle';
 import {PProps} from '~src/components/Typography/types';
+import {useStyle} from '~src/hooks/useStyle';
+import {FONTS, COLORS} from '~src/theme';
 
 const P: React.FC<PProps> = ({
   children,

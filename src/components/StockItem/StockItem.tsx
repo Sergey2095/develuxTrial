@@ -1,9 +1,13 @@
 import React, {useMemo} from 'react';
 import {StyleSheet, View} from 'react-native';
-import P from '../Typography/P';
+
+import {useStyle} from '~src/hooks/useStyle';
 import {COLORS, STYLES} from '~src/theme';
 import {IStock} from '~src/types';
-import {useStyle} from '~src/hooks/useStyle';
+
+import P from '../Typography/P';
+
+export const ITEM_HEIGHT = 70;
 
 type StockItemProps = {
   stock: IStock;
@@ -62,6 +66,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    height: ITEM_HEIGHT,
   },
   priceWrapper: {
     padding: 10,

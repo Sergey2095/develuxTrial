@@ -5,13 +5,13 @@ import {
   View,
   TextInputProps,
   TextStyle,
-  GestureResponderEvent,
   NativeSyntheticEvent,
   TextInputFocusEventData,
 } from 'react-native';
 
 import {P} from '~components/Typography';
 import {COLORS, FONTS, STYLES} from '~theme/index';
+
 import CustomIcon from '../CustomIcon';
 
 export type InputProps = {
@@ -21,8 +21,6 @@ export type InputProps = {
   inputStyles?: TextStyle;
   isSearchable?: true;
   onChangeText?: (text: string, name?: string) => void;
-  addHandle?: (event: GestureResponderEvent) => void;
-  customAction?: React.ReactNode;
 } & TextInputProps;
 
 const Input = ({

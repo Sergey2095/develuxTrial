@@ -1,20 +1,14 @@
 import React, {useEffect} from 'react';
+import {StatusBar, StyleSheet, View} from 'react-native';
 
-import {StatusBar, StyleSheet, useColorScheme, View} from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import Navigation from './src/navigation/navigation-container';
 import {useStockStore} from '~src/store';
 
+import Navigation from './src/navigation/navigation-container';
+
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   const {stocks, setStocks} = useStockStore();
 
+  // TODO: Create single entry point for data fetching
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -23,23 +17,20 @@ function App(): React.JSX.Element {
       const json = await response.json();
       setStocks(json);
     } catch (error) {
-      //TODO: add error handling
+      // TODO: add error handling
       console.error('Error:', error);
     }
   };
 
   useEffect(() => {
-    if (stocks.length === 0) {
+    if (stocks.length === 0 && useStockStore.persist.hasHydrated()) {
       fetchData();
     }
-  }, []);
+  }, [useStockStore.persist.hasHydrated]);
 
   return (
     <View style={styles.container}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
+      <StatusBar barStyle={'light-content'} />
       <Navigation />
     </View>
   );

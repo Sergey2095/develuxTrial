@@ -1,9 +1,11 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {H2} from '../Typography';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {COLORS} from '~theme/index';
+
 import {useStyle} from '~hooks/useStyle';
+import {COLORS} from '~theme/index';
+
+import {H2} from '../Typography';
 
 type HeaderProps = {
   title: string;

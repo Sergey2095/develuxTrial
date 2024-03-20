@@ -1,13 +1,13 @@
-import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {useCallback} from 'react';
-import {P} from '~components/Typography';
-import StockScreen from '~screens/StockScreen';
-import SearchScreen from '~screens/SearchScreen';
-import CustomIcon from '~components/CustomIcon';
-import {COLORS, STYLES} from '~theme/index';
+import React, {useCallback} from 'react';
 import {View} from 'react-native';
+
+import CustomIcon from '~components/CustomIcon';
+import {P} from '~components/Typography';
+import SearchScreen from '~screens/SearchScreen';
+import StockScreen from '~screens/StockScreen';
 import {IconNameType} from '~src/components/CustomIcon/CustomIcon';
+import {COLORS, STYLES} from '~theme/index';
 
 const Tab = createBottomTabNavigator();
 

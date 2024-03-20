@@ -1,7 +1,9 @@
 import React from 'react';
 import {StyleSheet, TextProps} from 'react-native';
-import {FONTS, COLORS} from '~src/theme';
+
 import {useStyle} from '~src/hooks/useStyle';
+import {FONTS, COLORS} from '~src/theme';
+
 import {P} from './';
 
 const H2: React.FC<TextProps> = ({children, style = {}, ...props}) => {

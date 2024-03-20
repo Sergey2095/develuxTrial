@@ -1,5 +1,4 @@
-import CustomIcon from './CustomIcon';
-import {IconProps} from './CustomIcon';
+import CustomIcon, {IconProps} from './CustomIcon';
 
 export type {IconProps};
 

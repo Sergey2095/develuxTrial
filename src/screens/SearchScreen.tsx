@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import {StyleSheet, View} from 'react-native';
+import {useDebounceCallback} from 'usehooks-ts';
+
 import Header from '~components/Header';
 import Input from '~src/components/Input';
+import StockList from '~src/components/StockList';
 import P from '~src/components/Typography/P';
-import {COLORS, STYLES} from '~src/theme';
-import {useDebounceCallback} from 'usehooks-ts';
-import {IStock} from '~src/types';
-import StockItem from '~src/components/StockItem/StockItem';
-import List from '~src/components/List';
 import {useStockStore} from '~src/store';
+import {COLORS, STYLES} from '~src/theme';
+import {IStock} from '~src/types';
 
 const SearchScreen = () => {
   const {stocks} = useStockStore();
@@ -66,10 +66,6 @@ const SearchScreen = () => {
     onChangeDebounce(text);
   };
 
-  const renderStockItem = ({item}: {item: IStock}) => {
-    return <StockItem stock={item} />;
-  };
-
   return (
     <View style={STYLES.flex}>
       <Header title="Search" />
@@ -83,14 +79,7 @@ const SearchScreen = () => {
           value={searchText}
           onChangeText={onChange}
         />
-        <List<IStock>
-          data={searchResult}
-          renderComponent={renderStockItem}
-          keyExtractor={item => item.id.toString()}
-          onEndReachedThreshold={0.25}
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={[STYLES.mt20, STYLES.mb20]}
-        />
+        <StockList data={searchResult} />
       </View>
     </View>
   );

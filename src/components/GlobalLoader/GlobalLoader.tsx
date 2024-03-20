@@ -7,8 +7,8 @@ import {
   ViewStyle,
 } from 'react-native';
 
-import {COLORS} from '~theme/index';
 import {useStyle} from '~hooks/useStyle';
+import {COLORS} from '~theme/index';
 
 interface IGlobalLoader {
   size?: 'small' | 'large';
