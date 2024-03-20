@@ -21,6 +21,7 @@ const StockList = ({data}: StockListProps) => {
       keyExtractor={item => item.id.toString()}
       showsVerticalScrollIndicator={false}
       contentContainerStyle={[STYLES.mt20, STYLES.mb20]}
+      // TODO: Add empty state layout
       getItemLayout={(data, index) => ({
         length: ITEM_HEIGHT,
         offset: ITEM_HEIGHT * index,
