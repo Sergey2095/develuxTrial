@@ -23,10 +23,10 @@ function App(): React.JSX.Element {
   };
 
   useEffect(() => {
-    if (stocks.length === 0 && useStockStore.persist.hasHydrated()) {
+    if (stocks.length === 0) {
       fetchData();
     }
-  }, [useStockStore.persist.hasHydrated]);
+  }, []);
 
   return (
     <View style={styles.container}>
