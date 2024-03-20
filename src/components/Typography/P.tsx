@@ -40,6 +40,6 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: FONTS.SFProDisplay,
     fontSize: 16,
-    color: COLORS.black,
+    color: COLORS.white,
   },
 });
