@@ -28,7 +28,12 @@ function TabStack() {
   );
 
   return (
-    <Tab.Navigator screenOptions={{headerShown: false, tabBarShowLabel: false}}>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarShowLabel: false,
+        tabBarStyle: {backgroundColor: COLORS.black100},
+      }}>
       <Tab.Screen
         options={{
           tabBarIcon: ({focused}) =>
